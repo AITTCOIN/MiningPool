@@ -1,0 +1,69 @@
+{
+    "poolname": "AITTCOIN OFFICIAL MINING POOL",
+    "devmode": false,
+    "devmodePayMinimim": 0.25,
+    "devmodePayInterval": 120,
+    "logips": true,
+    "anonymizeips": true,
+    "ipv4bits": 16,
+    "ipv6bits": 16,
+    "defaultCoin": "aittcoin",
+    "poollogo": "/website/static/img/poollogo.png",
+    "discord": "Join our #mining channel on Discord: ",
+    "discordlink": "https://aittcoin.org/about",
+    "pagetitle": "AITT COIN Pool - REAL 0.0 % Fees! - Run By Official Team!",
+    "pageauthor": "JAMPS",
+    "pagedesc": "A reliable, ZERO fee, easy to use mining pool for AITT COIN! Get started mining today!",
+    "pagekeywds": "GPU,Hash,Hashrate,Cryptocurrency,Crypto,Mining,Pool,AITTCOIN,Easy,Simple,How,To",
+    "btcdonations": "bc1q4qu9schux3eu0jtuz9d70e2nu8r5lqy4hawh4j",
+    "AITTdonations": "AM1MosimZf97C4yxccreJgSAjBXEVzisLf",
+    "logger" : {
+        "level" : "debug",
+        "file" : "/mnt/d/block/newAIcoin/design/Ravencoin-Pool/log"
+    },
+    "cliHost": "127.0.0.1",
+    "cliPort": 17117,
+    "clustering": {
+        "enabled": false,
+        "forks": "auto"
+    },
+    "defaultPoolConfigs": {
+        "blockRefreshInterval": 30,
+        "jobRebroadcastTimeout": 7.5,
+        "connectionTimeout": 600,
+        "emitInvalidBlockHashes": false,
+        "validateWorkerUsername": true,
+        "tcpProxyProtocol": false,
+        "banning": {
+            "enabled": false,
+            "time": 600,
+            "invalidPercent": 50,
+            "checkThreshold": 500,
+            "purgeInterval": 300
+        },
+        "redis": {
+            "host": "127.0.0.1",
+            "port": 6379
+        }
+    },
+    "website": {
+        "enabled": true,
+        "sslenabled": false,
+        "sslforced": false,
+        "host": "0.0.0.0",
+        "port": 16666,
+        "sslport": 443,
+        "sslkey": "",
+        "sslcert": "",
+        "stratumHost": "mining.pool.aittcoin.org",
+        "stats": {
+            "updateInterval": 900,
+            "historicalRetention": 43200,
+            "hashrateWindow": 900
+        }
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6379
+    }
+}
