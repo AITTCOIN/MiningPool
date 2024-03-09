@@ -1,22 +1,9 @@
-Cyber Pool AITTCOIN Stratum - v1.0.1 Special Edition
+AITTCOIN Stratum - v1.0.1 Mining Pool
 ================
 
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue)](https://opensource.org/licenses/GPL-3.0)
 
 Highly Efficient mining pool for AITTCOIN!
-
--------
-### Screenshots
-http://aittcoinpool.ath.cx/
-
-![ScreenShot](https://github.com/mardock2009/AITTCOIN-Pool/blob/master/pool.jpg?raw=true)
--------
-### Node Open Mining Portal consists of 3 main modules:
-| Project                     |
-| --------------------------  |
-| [JAMPS AITTCOIN Pool]      |
-| [Cyber Pool RVN  Stratum]   |
-| [JAMPS AITTCOIN Hashing]   |
 
 -------
 ### Requirements
@@ -30,31 +17,37 @@ http://aittcoinpool.ath.cx/
 * ntp
 
 -------
+### Install
 
-### Install AITTCOIN Daemon
+
+ 	git clone https://github.com/AITTCOIN/MiningPool
+ 	cd MiningPool
+  	
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+	
+	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+	
+	nvm install 10.24.1
+ 	nvm use 10.24.1
+  	npm install pm2 -g
+
+#### !!!Please note that npm install is not required, please run directly!!!
 
 
-### Install Pool
+### Run Pool
+    
+    cd ~/AITTCOIN-Pool
+    chmod 777 pool-logs-watch.sh pool-reset-stats.sh pool-restart.sh pool-start.sh pool-stop.sh
+    sudo bash pool-start.sh
 
-    sudo apt install git -y
-    cd ~
-    git config --global http.https://gopkg.in.followRedirects true
-    git clone https://github.com/mardock2009/AITTCOIN-Pool.git
-    cd AITTCOIN-Pool/
-    chmod 777 install.sh
-    ./install.sh
 
--------
 ### Configure Pool
 
-Change "stratumHost": "rvn.jamps.pro", to your IP or DNS in file config.json:
-
-    cd ~/AITTCOIN-Pool
-    nano config.json
 
 ```javascript
 {
-    "poolname": "Ravncoin Pool",
+    "poolname": "AITTCOIN Pool",
     "devmode": false,
     "devmodePayMinimim": 0.25,
     "devmodePayInterval": 120,
@@ -126,7 +119,7 @@ Change "stratumHost": "rvn.jamps.pro", to your IP or DNS in file config.json:
 
 ```
 
-Change "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk", to your pool created wallet address in file AITTCOIN.json:
+Change "address": "AU5KFJNJ8AmmE3zcV6JBSwNjuGihtZ4QQ2", to your pool created wallet address in file AITTCOIN.json:
 
     cd ~/AITTCOIN-Pool/pools
     nano AITTCOIN.json
@@ -135,10 +128,10 @@ Change "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk", to your pool created wal
 {
     "enabled": true,
     "coin": "AITTCOIN.json",
-    "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk",
-    "donateaddress": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk",
+    "address": "AU5KFJNJ8AmmE3zcV6JBSwNjuGihtZ4QQ2",
+    "donateaddress": "AU5KFJNJ8AmmE3zcV6JBSwNjuGihtZ4QQ2",
     "rewardRecipients": {
-        "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk": 0.5
+        "AU5KFJNJ8AmmE3zcV6JBSwNjuGihtZ4QQ2": 0.5
     },
     "paymentProcessing": {
         "enabled": true,
@@ -229,17 +222,11 @@ Change "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk", to your pool created wal
 
 ```
 
-### Run Pool
-    
-    cd ~/AITTCOIN-Pool
-    chmod 777 pool-logs-watch.sh pool-reset-stats.sh pool-restart.sh pool-start.sh pool-stop.sh
-    sudo bash pool-start.sh
-
 
 -------
 
 ## License
 ```
 Licensed under the GPL-3.0
-Copyright (c) 2021 mardock2009 / JAMPS
+Copyright (c) 2024 AITTCOIN
 ```
