@@ -24,7 +24,7 @@
     "cliHost": "127.0.0.1",
     "cliPort": 17117,
     "clustering": {
-        "enabled": false,
+        "enabled": true,
         "forks": "auto"
     },
     "defaultPoolConfigs": {
