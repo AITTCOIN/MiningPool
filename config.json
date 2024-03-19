@@ -28,7 +28,7 @@
         "forks": "auto"
     },
     "defaultPoolConfigs": {
-        "blockRefreshInterval": 30,
+        "blockRefreshInterval": 7.5,
         "jobRebroadcastTimeout": 7.5,
         "connectionTimeout": 600,
         "emitInvalidBlockHashes": false,
