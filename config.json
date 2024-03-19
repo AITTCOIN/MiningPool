@@ -10,7 +10,7 @@
     "defaultCoin": "aittcoin",
     "poollogo": "/website/static/img/poollogo.png",
     "discord": "Join our #mining channel on Discord: ",
-    "discordlink": "https://aittcoin.org/about",
+    "discordlink": "https://discord.com/invite/KAmkFwF7k9",
     "pagetitle": "AITT COIN Pool - REAL 0.0 % Fees! - Run By Official Team!",
     "pageauthor": "JAMPS",
     "pagedesc": "A reliable, ZERO fee, easy to use mining pool for AITT COIN! Get started mining today!",
@@ -19,7 +19,7 @@
     "AITTdonations": "AM1MosimZf97C4yxccreJgSAjBXEVzisLf",
     "logger" : {
         "level" : "debug",
-        "file" : "/mnt/d/block/newAIcoin/design/Ravencoin-Pool/log"
+        "file" : "/root/pool.log"
     },
     "cliHost": "127.0.0.1",
     "cliPort": 17117,
@@ -51,15 +51,15 @@
         "sslenabled": false,
         "sslforced": false,
         "host": "0.0.0.0",
-        "port": 16666,
+        "port": 8080,
         "sslport": 443,
         "sslkey": "",
         "sslcert": "",
         "stratumHost": "mining.pool.aittcoin.org",
         "stats": {
-            "updateInterval": 900,
+            "updateInterval": 60,
             "historicalRetention": 43200,
-            "hashrateWindow": 900
+            "hashrateWindow": 60
         }
     },
     "redis": {
